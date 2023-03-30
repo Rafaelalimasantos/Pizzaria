@@ -1,0 +1,187 @@
+/*Reset css para tirar todas as margens dos elementos*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.cabecalho>img {
+    height: 60px;
+}
+
+.cabecalho {
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu>li {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.menu>li>a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px black;
+    font-weight: 600;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.menu>li:hover {
+    background-color: brown;
+}
+
+.banner {
+    height: 400px;
+    background: url(/HTML/img-pizza/pizza.jpg);
+    background-position: top center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 4px black;
+}
+
+.banner>h1 {
+    color: white;
+    font-size: 65px;
+    text-shadow: 1px 1px 1px rgb(34, 156, 18);
+    margin-bottom: 30px;
+}
+
+.botão1 {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid rgb(251, 251, 255);
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 4px 4px 6px rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.botão1:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+main {
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    color: rgb(27, 159, 27);
+}
+
+hr {
+    height: 3px;
+    border: none;
+    margin: 10px 20px;
+    background: red;
+    background: linear-gradient(90deg, rgba(167, 0, 0, 0) 10%,
+    rgba(255, 0, 0, 1) 50%, white 90%);
+}
+
+.sabores {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sabor {
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+    margin: 10px;
+    background-color: rgb(27, 159, 27);
+    min-width: 250px;
+    max-width: 250px;
+}
+
+@media (max-whidt:500px){
+    .sabores {
+        flex-direction: row;
+        margin: 10px;
+    }
+    .sabores {
+        min-width: 100% ;
+    }
+
+}
+
+.sabor>img {
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+    width: 100%;
+}
+
+.nome {
+    color: white;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    font-size: 25px;
+}
+
+.preco {
+    background-color: yellow;
+    margin: 10px;
+    border-radius: 5px;
+    color: rgb(2, 2, 2);
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.rodape {
+    color: white;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 -3px 10px rgb(34, 156, 18);
+}
+
+.preco:hover {
+    background-color: rgb(161, 161, 34);
+}
+
+
+.promo {
+    display: flex;
+    overflow: scroll;   
+}
+
+.promo::-webkit-scrollbar{
+    display: none;
+}
+
+.endereco {
+    color: white;
+}
+
+li {
+    list-style-type: none;
+}
+
+.rede-social > ul > li > a {
+    color: white;
+    text-decoration: none;
+}
